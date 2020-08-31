@@ -24,9 +24,20 @@
 <%
     List<Object> list = new ArrayList<>();
     list.add("aaaa");
-    request.setAttribute("list",list);
-    request.setAttribute("number",6);
+/*    List<Object> number = new ArrayList<>();
+    number.add(1);
+    number.add(3);
+    number.add(2);
+    number.add(5);
+    int a = 0;
+    for (int i = 0; i < number.size(); i++) {
+        a = i;
+        request.setAttribute("number",number.get(i));
+    }
+    request.setAttribute("list",list);*/
+
     request.setAttribute("number",5);
+    request.setAttribute("number",6);
 
 %>
     <c:if test="${not empty requestScope.list}">

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/day03_request/day03_request.iml" filepath="$PROJECT_DIR$/day03_request/day03_request.iml" />
       <module fileurl="file://$PROJECT_DIR$/day04_Cookies_Session/day04_Cookies_Session.iml" filepath="$PROJECT_DIR$/day04_Cookies_Session/day04_Cookies_Session.iml" />
       <module fileurl="file://$PROJECT_DIR$/day05__el_jstl/day05__el_jstl.iml" filepath="$PROJECT_DIR$/day05__el_jstl/day05__el_jstl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user_case/user_case.iml" filepath="$PROJECT_DIR$/user_case/user_case.iml" />
     </modules>
   </component>
 </project>
