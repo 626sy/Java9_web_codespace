@@ -17,13 +17,43 @@
         }
     </script>
     <style>
-        div{
+        .error{
             color: red;
+        }
+        .box{
+            border: solid 1px greenyellow;
+            width: 400px;
+            margin: auto;
+        }
+        span {
+            display: inline-block;
+            margin-right: 4px;
+        }
+        td {
+            width: 100px;
         }
     </style>
 </head>
 <body>
-<form action="/loginServlet" method="post">
+<div class="box">
+
+    <form action="/loginServlet" method="post">
+
+<%--        <div>
+            <span>用户名</span><input type="text" name="username">
+        </div>
+        <div>
+            <span>密码</span><input type="password" name="password">
+        </div>
+        <div>
+            <span>验证码</span><input type="password" name="checkCode">
+
+        </div>
+        <img src="/checkCodeServlet" alt="">
+        <div>
+            <input type="submit" value="登录">
+        </div>--%>
+
     <table>
         <tr>
             <td>用户名</td>
@@ -41,11 +71,15 @@
             <td colspan="2"><img id="img" src="/checkCodeServlet" alt=""></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit" value="登录"></td>
+            <td ><input type="submit" value="登录"></td>
+            <td><a href="register.jsp">注册</a></td>
+
         </tr>
     </table>
-</form>
-<div><%=request.getAttribute("login_error") == null?"":request.getAttribute("login_error")%></div>
-<div><%=request.getAttribute("cc_error") == null?"":request.getAttribute("cc_error")%></div>
+    </form>
+</div>
+
+<div class="error"><%=request.getAttribute("login_error") == null?"":request.getAttribute("login_error")%></div>
+<div class="error"><%=request.getAttribute("cc_error") == null?"":request.getAttribute("cc_error")%></div>
 </body>
 </html>

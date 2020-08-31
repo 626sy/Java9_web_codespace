@@ -10,4 +10,5 @@ import java.sql.SQLException;
  */
 public interface UserDao {
     public User Login(User Username) throws SQLException;
+    public User register(User user);
 }

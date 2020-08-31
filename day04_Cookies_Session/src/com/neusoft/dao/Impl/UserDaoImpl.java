@@ -41,4 +41,30 @@ public class UserDaoImpl implements UserDao {
         }
         return user;
     }
+
+    @Override
+    public User register(User user) {
+        String sql = "insert into userlogin2(username,password,gender) values (?,?,?)";
+        int id = 0;
+        User registerUser = new User();
+        try {
+            conn = JDBCUtils.getConnection();
+            pstmt = conn.prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS);
+            pstmt.setString(1,user.getUsername());
+            pstmt.setString(2,user.getPassword());
+            pstmt.setString(3,user.getGender());
+            rs = pstmt.executeQuery();
+            while (rs.next()){
+                registerUser.setId(1);
+                registerUser.setUsername(rs.getString("username"));
+                registerUser.setPassword(rs.getString("password"));
+                registerUser.setGender(rs.getString("gender"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            JDBCUtils.close(rs,pstmt,conn);
+        }
+        return registerUser;
+    }
 }
