@@ -6,15 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5036403e-366e-445d-9273-0c78d182565a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day05__el_jstl/src/nuesoft/el/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05__el_jstl/web/el/el2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05__el_jstl/web/el/el3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05__el_jstl/web/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day05__el_jstl/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day05__el_jstl/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/day05__el_jstl_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/day05__el_jstl_war_exploded/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="5036403e-366e-445d-9273-0c78d182565a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -365,7 +357,7 @@
       <workItem from="1598573999752" duration="30279000" />
       <workItem from="1598661189271" duration="28880000" />
       <workItem from="1598789040694" duration="3977000" />
-      <workItem from="1598832395923" duration="7199000" />
+      <workItem from="1598832395923" duration="7439000" />
     </task>
     <servers />
   </component>
