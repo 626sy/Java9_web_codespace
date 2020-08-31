@@ -18,10 +18,10 @@ public class UserDaoImpl implements UserDao {
     @Override
     public List<User> findAll() {
         String sql = "select * from user";
-
+        // query():查询结果，将结果封装为JavaBean对象 * query的参数：RowMapper
+        // * 一般我们使用BeanPropertyRowMapper实现类。可以完成数据到JavaBean的自动封装  new BeanPropertyRowMapper<类型>(类型.class)
 //        List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class));
 //        return users;
-
         return template.query(sql, new BeanPropertyRowMapper<User>(User.class));
     }
 }

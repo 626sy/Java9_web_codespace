@@ -16,7 +16,6 @@ import java.util.Properties;
 public class JDBCUtils {
     private static DataSource ds;
     static {
-
         try {
             Properties pro = new Properties();
             InputStream is = JDBCUtils.class.getClassLoader().getResourceAsStream("druid.properties");

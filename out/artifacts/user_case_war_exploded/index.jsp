@@ -26,7 +26,7 @@
 <body>
 <div align="center">
   <a
-          href="list.html" style="text-decoration:none;font-size:33px">查询所有用户信息
+          href="/userListServlet" style="text-decoration:none;font-size:33px">查询所有用户信息
   </a>
 </div>
 </body>

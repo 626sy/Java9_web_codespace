@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!-- 网页使用的语言 -->
 <html lang="zh-CN">
@@ -96,3 +97,4 @@
 </div>
 </body>
 </html>
+
