@@ -36,11 +36,14 @@ ${3>4 and 3<4}
     List<Object> list = new ArrayList<>();
     list.add("haha");
     request.setAttribute("list",list);
+    int a = 1;
+    request.setAttribute("a",a);
 %>
 ${empty str}
 ${empty list}
 ${not empty str}
 ${not empty list}
+${empty a}
 
 
 
