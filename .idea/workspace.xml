@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5036403e-366e-445d-9273-0c78d182565a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/day05__el_jstl/web/el/el1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day05__el_jstl/web/el/el1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04_Cookies_Session/src/com/neusoft/servlet/RegisterServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -359,7 +359,7 @@
       <workItem from="1598573999752" duration="30279000" />
       <workItem from="1598661189271" duration="28880000" />
       <workItem from="1598789040694" duration="3977000" />
-      <workItem from="1598832395923" duration="3904000" />
+      <workItem from="1598832395923" duration="4381000" />
     </task>
     <servers />
   </component>
@@ -386,10 +386,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1598835336308" />
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1598789808167">
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1598836644487">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1598789808167" />
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1598836644487" />
     <state x="360" y="78" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1598410796292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
