@@ -57,6 +57,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -163,18 +164,16 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.31" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="day04_Cookies_Session:war exploded">
+        <artifact name="day05__el_jstl:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="" />
+            <option name="CONTEXT_PATH" value="/day05__el_jstl_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="_Java9_web_codespace_2" />
-        <option name="HTTP_PORT" value="80" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -232,7 +231,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="day04_Cookies_Session:war exploded" />
+          <artifact name="day05__el_jstl:war exploded" />
         </option>
       </method>
     </configuration>
@@ -475,10 +474,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="463" y="318" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.834@0.0.1536.834" timestamp="1598703057244" />
-    <state x="178" y="4" key="new project wizard" timestamp="1598661695192">
+    <state x="178" y="4" key="new project wizard" timestamp="1598834754069">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="178" y="4" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1598661695192" />
+    <state x="178" y="4" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1598834754069" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1598699274372">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
