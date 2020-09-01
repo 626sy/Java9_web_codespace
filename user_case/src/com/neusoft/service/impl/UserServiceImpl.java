@@ -20,7 +20,22 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int insertAll(User user) {
-        return dao.insertAll(user);
+    public void insertAll(User user) {
+        dao.insertAll(user);
+    }
+
+    @Override
+    public void update(User user) {
+        dao.updateAll(user);
+    }
+
+    @Override
+    public void deleteUser(String id) {
+        dao.delete(Integer.parseInt(id));
+    }
+
+    @Override
+    public User findUserById(String id) {
+        return dao.findById(Integer.parseInt(id));
     }
 }

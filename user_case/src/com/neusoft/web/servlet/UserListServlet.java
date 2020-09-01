@@ -1,5 +1,7 @@
-package com.neusoft.web;
+package com.neusoft.web.servlet;
 
+import com.neusoft.domain.User;
+import com.neusoft.service.UserService;
 import com.neusoft.service.impl.UserServiceImpl;
 
 import javax.servlet.ServletException;
@@ -8,13 +10,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @author shihaobo
- * @date 2020/8/31 19:53
+ * @date 2020/8/31 14:24
  */
-@WebServlet("/userUpdateServlet")
-public class UserUpdateServlet extends HttpServlet {
+@WebServlet("/userListServlet")
+public class UserListServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         this.doPost(req, resp);
@@ -22,7 +25,14 @@ public class UserUpdateServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserServiceImpl service = new UserServiceImpl();
+        // 1、调用  完成查询
+        UserService service = new UserServiceImpl();
+        List<User> users = service.findAll();
+        // 2、将数据存入req中
+        req.setAttribute("users",users);
+        // 3、转发到list.jsp页面中
+        req.getRequestDispatcher("/list.jsp").forward(req,resp);
+
 
     }
 }

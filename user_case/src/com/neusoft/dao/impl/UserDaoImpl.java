@@ -25,20 +25,38 @@ public class UserDaoImpl implements UserDao {
 //        return users;
         return template.query(sql, new BeanPropertyRowMapper<User>(User.class));
     }
-    // 修改
-    @Override
-    public List<User> updateAll() {
-        String sql = "update user set name = ? and gender =? and age = ? and address = ? and qq = ? and email = ?";
-        return null;
-    }
+
     // 注册
     @Override
-    public int insertAll(User user) {
-        String sql = "insert into user values(null ,?,?,?,?,?,?)";
-        int updateUser = template.update(sql, user.getName(), user.getGender(), user.getAge(),
+    public void insertAll(User user) {
+        String sql = "insert into user values(null ,?,?,?,?,?,?,null,null)";
+        int addUser = template.update(sql, user.getName(), user.getGender(), user.getAge(),
                 user.getAddress(), user.getQq(), user.getEmail());
-        return updateUser;
+        System.out.println(addUser);
+
     }
 
+    @Override
+    public void updateAll(User user) {
+        // TODO
+        String sql = "update user set name = ?,gender = ? ,age= ? ,address = ? ,qq = ? ,email = ? where id = ?" ;
+        template.update(sql, user.getName(), user.getGender(), user.getAge(),
+                user.getAddress(), user.getQq(), user.getEmail(),user.getId());
 
+    }
+
+    @Override
+    public void delete(int id) {
+        String sql ="delete from user where id = ?";
+
+        template.update(sql,id);
+    }
+
+    @Override
+    public User findById(int id) {
+        String sql = "select * from user where id = ?";
+
+        return template.queryForObject(sql,new BeanPropertyRowMapper<User>(User.class),id);
+
+    }
 }

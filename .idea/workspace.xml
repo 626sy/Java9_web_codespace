@@ -7,19 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5036403e-366e-445d-9273-0c78d182565a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/UserInsertServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/UserUpdateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_case/web/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/DeleteUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/FindUserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/impl/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/test/TestUserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/test/TestUserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/web/UserInsertServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/AddUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/web/UserListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/UserListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/web/UserUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/UserUpdateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/web/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/web/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/web/add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/web/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/web/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_case/web/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/web/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/web/update.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +80,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user_case/web" />
+    <property name="last_opened_file_path" value="D:/项目系统/Javaweb_bookstore-master/BookStore" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,25 +93,25 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\GitHub\Java9_web_codespace\user_case\web" />
-      <recent name="G:\GitHub\Java9_web_codespace\user_case\src" />
-      <recent name="G:\GitHub\Java9_web_codespace\user_case\web\WEB-INF\lib" />
-      <recent name="G:\GitHub\Java9_web_codespace\day05__el_jstl\web\jstl" />
-      <recent name="G:\GitHub\Java9_web_codespace\day05__el_jstl\web\WEB-INF\lib" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.neusoft.util" />
-      <recent name="com.neusoft.servlet" />
-      <recent name="com.neusoft.session" />
-      <recent name="com.neusoft.cookie" />
-      <recent name="com.neusoft.webservlet" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\GitHub\Java9_web_codespace\user_case\web" />
       <recent name="G:\GitHub\Java9_web_codespace\day04_Cookies_Session\web\WEB-INF" />
       <recent name="G:\GitHub\Java9_web_codespace\day03_request\src" />
       <recent name="G:\GitHub\Java9_web_codespace\day02_servlet_class\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.neusoft.web.servlet" />
+      <recent name="com.neusoft.util" />
+      <recent name="com.neusoft.servlet" />
+      <recent name="com.neusoft.session" />
+      <recent name="com.neusoft.cookie" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\GitHub\Java9_web_codespace\user_case\web\WEB-INF" />
+      <recent name="G:\GitHub\Java9_web_codespace\user_case\web" />
+      <recent name="G:\GitHub\Java9_web_codespace\user_case\src" />
+      <recent name="G:\GitHub\Java9_web_codespace\user_case\web\WEB-INF\lib" />
+      <recent name="G:\GitHub\Java9_web_codespace\day05__el_jstl\web\jstl" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.31">
@@ -140,17 +146,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day04_Cookies_Session" />
+    <configuration name="TestUserDaoImpl.userDaoImplTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user_case" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neusoft.Test.*" />
+          <option name="PATTERN" value="com.neusoft.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.neusoft.Test" />
-      <option name="MAIN_CLASS_NAME" value="com.neusoft.Test.UserDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.neusoft.test" />
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.test.TestUserDaoImpl" />
+      <option name="METHOD_NAME" value="userDaoImplTest3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUserDaoImpl.userDaoImplTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user_case" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.neusoft.test" />
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.test.TestUserDaoImpl" />
+      <option name="METHOD_NAME" value="userDaoImplTest4" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,22 +189,6 @@
       <option name="PACKAGE_NAME" value="com.neusoft.Test" />
       <option name="MAIN_CLASS_NAME" value="com.neusoft.Test.UserDaoTest" />
       <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day03_request" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.neusoft.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.neusoft.test" />
-      <option name="MAIN_CLASS_NAME" value="com.neusoft.test.UserDaoTest" />
-      <option name="METHOD_NAME" value="testLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -324,20 +331,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserDaoTest.testLogin" />
-      <item itemvalue="JUnit.UserDaoTest (1)" />
       <item itemvalue="JUnit.UserDaoTest.test" />
       <item itemvalue="JUnit.TestUserDaoImpl" />
       <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.31" />
+      <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest3" />
+      <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest4" />
+        <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest3" />
         <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest" />
         <item itemvalue="JUnit.TestUserDaoImpl" />
         <item itemvalue="JUnit.UserDaoTest.test" />
-        <item itemvalue="JUnit.UserDaoTest (1)" />
-        <item itemvalue="JUnit.UserDaoTest.testLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -351,11 +358,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -391,6 +393,7 @@
       <workItem from="1598661189271" duration="28880000" />
       <workItem from="1598789040694" duration="3977000" />
       <workItem from="1598832395923" duration="32904000" />
+      <workItem from="1598920235279" duration="14749000" />
     </task>
     <servers />
   </component>
@@ -401,10 +404,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="79" key="#Notifications" timestamp="1598832502041">
+    <state x="361" y="79" key="#Notifications" timestamp="1598920248383">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="79" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1598832502041" />
+    <state x="361" y="79" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1598920248383" />
     <state x="361" y="79" key="#Project_Structure" timestamp="1598407092281">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -417,10 +420,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1598918358642" />
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1598877675960">
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1598941625550">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1598877675960" />
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1598941625550" />
     <state x="360" y="78" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1598410796292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -429,82 +432,102 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="381" y="345" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1598689403364" />
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1598688579028">
+    <state x="499" y="167" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598922662517">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1598688579028" />
-    <state width="1493" height="86" key="GridCell.Tab.0.bottom" timestamp="1598920134870">
+    <state x="499" y="167" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1598922662517" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1598929004067">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="86" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598920134870" />
-    <state width="1493" height="86" key="GridCell.Tab.0.center" timestamp="1598920134870">
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1598929004067" />
+    <state width="1221" height="10" key="GridCell.Tab.0.bottom" timestamp="1598942230091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="86" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1598920134870" />
-    <state width="1493" height="86" key="GridCell.Tab.0.left" timestamp="1598920134870">
+    <state width="1221" height="10" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598942230091" />
+    <state width="1221" height="10" key="GridCell.Tab.0.center" timestamp="1598942230091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="86" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1598920134870" />
-    <state width="1493" height="86" key="GridCell.Tab.0.right" timestamp="1598920134870">
+    <state width="1221" height="10" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1598942230091" />
+    <state width="1221" height="10" key="GridCell.Tab.0.left" timestamp="1598942230091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="86" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1598920134870" />
-    <state width="1221" height="15" key="GridCell.Tab.1.bottom" timestamp="1598920134865">
+    <state width="1221" height="10" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1598942230091" />
+    <state width="1221" height="10" key="GridCell.Tab.0.right" timestamp="1598942230091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="15" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598920134865" />
-    <state width="1221" height="15" key="GridCell.Tab.1.center" timestamp="1598920134865">
+    <state width="1221" height="10" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1598942230091" />
+    <state width="1221" height="10" key="GridCell.Tab.1.bottom" timestamp="1598942229986">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="15" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1598920134865" />
-    <state width="1221" height="15" key="GridCell.Tab.1.left" timestamp="1598920134864">
+    <state width="1221" height="10" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598942229986" />
+    <state width="1221" height="10" key="GridCell.Tab.1.center" timestamp="1598942229986">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="15" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1598920134864" />
-    <state width="1221" height="15" key="GridCell.Tab.1.right" timestamp="1598920134865">
+    <state width="1221" height="10" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1598942229986" />
+    <state width="1221" height="10" key="GridCell.Tab.1.left" timestamp="1598942229986">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="15" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1598920134865" />
-    <state width="1221" height="15" key="GridCell.Tab.2.bottom" timestamp="1598920134865">
+    <state width="1221" height="10" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1598942229986" />
+    <state width="1221" height="10" key="GridCell.Tab.1.right" timestamp="1598942229986">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="15" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598920134865" />
-    <state width="1221" height="15" key="GridCell.Tab.2.center" timestamp="1598920134865">
+    <state width="1221" height="10" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1598942229986" />
+    <state width="1221" height="10" key="GridCell.Tab.2.bottom" timestamp="1598942229987">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="15" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1598920134865" />
-    <state width="1221" height="15" key="GridCell.Tab.2.left" timestamp="1598920134865">
+    <state width="1221" height="10" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598942229987" />
+    <state width="1221" height="10" key="GridCell.Tab.2.center" timestamp="1598942229987">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="15" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1598920134865" />
-    <state width="1221" height="15" key="GridCell.Tab.2.right" timestamp="1598920134865">
+    <state width="1221" height="10" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1598942229987" />
+    <state width="1221" height="10" key="GridCell.Tab.2.left" timestamp="1598942229986">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="15" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1598920134865" />
-    <state width="1221" height="283" key="GridCell.Tab.3.bottom" timestamp="1598670788042">
+    <state width="1221" height="10" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1598942229986" />
+    <state width="1221" height="10" key="GridCell.Tab.2.right" timestamp="1598942229987">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="283" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598670788042" />
-    <state width="1221" height="283" key="GridCell.Tab.3.center" timestamp="1598670788042">
+    <state width="1221" height="10" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1598942229987" />
+    <state width="1221" height="271" key="GridCell.Tab.3.bottom" timestamp="1598931470751">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="283" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1598670788042" />
-    <state width="1221" height="283" key="GridCell.Tab.3.left" timestamp="1598670788041">
+    <state width="1221" height="271" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598931470751" />
+    <state width="1221" height="271" key="GridCell.Tab.3.center" timestamp="1598931470751">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="283" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1598670788041" />
-    <state width="1221" height="283" key="GridCell.Tab.3.right" timestamp="1598670788042">
+    <state width="1221" height="271" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1598931470751" />
+    <state width="1221" height="271" key="GridCell.Tab.3.left" timestamp="1598931470751">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="283" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1598670788042" />
+    <state width="1221" height="271" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1598931470751" />
+    <state width="1221" height="271" key="GridCell.Tab.3.right" timestamp="1598931470751">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1221" height="271" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1598931470751" />
+    <state width="1221" height="271" key="GridCell.Tab.6.bottom" timestamp="1598929502401">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1221" height="271" key="GridCell.Tab.6.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598929502401" />
+    <state width="1221" height="271" key="GridCell.Tab.6.center" timestamp="1598929502401">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1221" height="271" key="GridCell.Tab.6.center/0.0.1536.834@0.0.1536.834" timestamp="1598929502401" />
+    <state width="1221" height="271" key="GridCell.Tab.6.left" timestamp="1598929502401">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1221" height="271" key="GridCell.Tab.6.left/0.0.1536.834@0.0.1536.834" timestamp="1598929502401" />
+    <state width="1221" height="271" key="GridCell.Tab.6.right" timestamp="1598929502401">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1221" height="271" key="GridCell.Tab.6.right/0.0.1536.834@0.0.1536.834" timestamp="1598929502401" />
     <state x="272" y="0" key="SettingsEditor" timestamp="1598864417281">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="272" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1598864417281" />
-    <state x="461" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1598832394788">
+    <state x="461" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1598920238059">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="461" y="245" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1598832394788" />
+    <state x="461" y="245" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1598920238059" />
     <state x="463" y="318" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1598857927316">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -513,6 +536,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="178" y="4" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1598845368044" />
+    <state x="511" y="50" key="refactoring.ChangeSignatureDialog" timestamp="1598923464416">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="511" y="50" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1598923464416" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1598699274372">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

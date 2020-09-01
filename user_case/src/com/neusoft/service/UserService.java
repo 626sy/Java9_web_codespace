@@ -16,5 +16,11 @@ public interface UserService {
     public List<User> findAll();
 
     // 注册新用户
-    public int insertAll(User user);
+    public void insertAll(User user);
+
+    public void update(User user);
+
+    public void deleteUser(String  id);
+
+    User findUserById(String id);
 }
