@@ -2,6 +2,7 @@ package com.neusoft.test;
 
 import com.neusoft.dao.impl.UserDaoImpl;
 import com.neusoft.domain.User;
+import com.neusoft.service.impl.UserServiceImpl;
 import org.apache.commons.beanutils.BeanUtils;
 import org.junit.Test;
 
@@ -50,7 +51,7 @@ public class TestUserDaoImpl {
         System.out.println(user);
     }*/
         // 修改
-    @Test
+/*    @Test
     public void userDaoImplTest4() throws InvocationTargetException, IllegalAccessException {
         HashMap<String, String> map = new HashMap<>();
         map.put("name","zhangsan");
@@ -58,6 +59,16 @@ public class TestUserDaoImpl {
         User user = new User();
         BeanUtils.populate(user,map);
         System.out.println(user);
+
+    }*/
+
+    @Test
+    public void Test5()  {
+        UserServiceImpl service = new UserServiceImpl();
+        UserDaoImpl dao = new UserDaoImpl();
+        User user = new User();
+
+        service.likeFind(user);
 
     }
 

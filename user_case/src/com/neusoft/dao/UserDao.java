@@ -25,4 +25,6 @@ public interface UserDao {
     public User login(User user);
 
     public User findUserByUsernameAndPassword(String username,String password);
+
+    List<User> likeFind(User user);
 }

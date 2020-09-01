@@ -7,11 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5036403e-366e-445d-9273-0c78d182565a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/LikeSelectServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_case_war_exploded/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/impl/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/DelSelectedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/DelSelectedServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/test/TestUserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/test/TestUserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/web/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/web/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +103,7 @@
       <recent name="G:\GitHub\Java9_web_codespace\day05__el_jstl\web\jstl" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.31">
+  <component name="RunManager" selected="JUnit.TestUserDaoImpl.Test5">
     <configuration name="TestUserDaoImpl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="user_case" />
       <extension name="coverage">
@@ -113,6 +115,22 @@
       <option name="PACKAGE_NAME" value="com.neusoft.test" />
       <option name="MAIN_CLASS_NAME" value="com.neusoft.test.TestUserDaoImpl" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUserDaoImpl.Test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user_case" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.neusoft.test" />
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.test.TestUserDaoImpl" />
+      <option name="METHOD_NAME" value="Test5" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,22 +178,6 @@
       <option name="PACKAGE_NAME" value="com.neusoft.test" />
       <option name="MAIN_CLASS_NAME" value="com.neusoft.test.TestUserDaoImpl" />
       <option name="METHOD_NAME" value="userDaoImplTest4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day04_Cookies_Session" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.neusoft.Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.neusoft.Test" />
-      <option name="MAIN_CLASS_NAME" value="com.neusoft.Test.UserDaoTest" />
-      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -318,20 +320,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserDaoTest.test" />
       <item itemvalue="JUnit.TestUserDaoImpl" />
       <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest" />
       <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest3" />
       <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest4" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.31" />
+      <item itemvalue="JUnit.TestUserDaoImpl.Test5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestUserDaoImpl.Test5" />
         <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest4" />
         <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest3" />
         <item itemvalue="JUnit.TestUserDaoImpl.userDaoImplTest" />
         <item itemvalue="JUnit.TestUserDaoImpl" />
-        <item itemvalue="JUnit.UserDaoTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -380,7 +382,7 @@
       <workItem from="1598661189271" duration="28880000" />
       <workItem from="1598789040694" duration="3977000" />
       <workItem from="1598832395923" duration="32904000" />
-      <workItem from="1598920235279" duration="34408000" />
+      <workItem from="1598920235279" duration="36570000" />
     </task>
     <servers />
   </component>
@@ -407,10 +409,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1598944711428" />
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1598960216972">
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1598965911697">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1598960216972" />
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1598965911697" />
     <state x="360" y="78" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1598410796292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -431,54 +433,54 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1598929004067" />
-    <state width="1221" height="264" key="GridCell.Tab.0.bottom" timestamp="1598963941324">
+    <state width="1493" height="95" key="GridCell.Tab.0.bottom" timestamp="1598970360564">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598963941324" />
-    <state width="1221" height="264" key="GridCell.Tab.0.center" timestamp="1598963941324">
+    <state width="1493" height="95" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598970360564" />
+    <state width="1493" height="95" key="GridCell.Tab.0.center" timestamp="1598970360564">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1598963941324" />
-    <state width="1221" height="264" key="GridCell.Tab.0.left" timestamp="1598963941323">
+    <state width="1493" height="95" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1598970360564" />
+    <state width="1493" height="95" key="GridCell.Tab.0.left" timestamp="1598970360564">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1598963941323" />
-    <state width="1221" height="264" key="GridCell.Tab.0.right" timestamp="1598963941324">
+    <state width="1493" height="95" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1598970360564" />
+    <state width="1493" height="95" key="GridCell.Tab.0.right" timestamp="1598970360564">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1598963941324" />
-    <state width="1221" height="264" key="GridCell.Tab.1.bottom" timestamp="1598963941192">
+    <state width="1493" height="95" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1598970360564" />
+    <state width="1221" height="168" key="GridCell.Tab.1.bottom" timestamp="1598965150687">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598963941192" />
-    <state width="1221" height="264" key="GridCell.Tab.1.center" timestamp="1598963941192">
+    <state width="1221" height="168" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598965150687" />
+    <state width="1221" height="168" key="GridCell.Tab.1.center" timestamp="1598965150687">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1598963941192" />
-    <state width="1221" height="264" key="GridCell.Tab.1.left" timestamp="1598963941191">
+    <state width="1221" height="168" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1598965150687" />
+    <state width="1221" height="168" key="GridCell.Tab.1.left" timestamp="1598965150687">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1598963941191" />
-    <state width="1221" height="264" key="GridCell.Tab.1.right" timestamp="1598963941192">
+    <state width="1221" height="168" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1598965150687" />
+    <state width="1221" height="168" key="GridCell.Tab.1.right" timestamp="1598965150687">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1598963941192" />
-    <state width="1221" height="264" key="GridCell.Tab.2.bottom" timestamp="1598963941192">
+    <state width="1221" height="168" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1598965150687" />
+    <state width="1221" height="168" key="GridCell.Tab.2.bottom" timestamp="1598965150687">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598963941192" />
-    <state width="1221" height="264" key="GridCell.Tab.2.center" timestamp="1598963941192">
+    <state width="1221" height="168" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1598965150687" />
+    <state width="1221" height="168" key="GridCell.Tab.2.center" timestamp="1598965150687">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1598963941192" />
-    <state width="1221" height="264" key="GridCell.Tab.2.left" timestamp="1598963941192">
+    <state width="1221" height="168" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1598965150687" />
+    <state width="1221" height="168" key="GridCell.Tab.2.left" timestamp="1598965150687">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1598963941192" />
-    <state width="1221" height="264" key="GridCell.Tab.2.right" timestamp="1598963941192">
+    <state width="1221" height="168" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1598965150687" />
+    <state width="1221" height="168" key="GridCell.Tab.2.right" timestamp="1598965150687">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1221" height="264" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1598963941192" />
+    <state width="1221" height="168" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1598965150687" />
     <state width="1221" height="289" key="GridCell.Tab.3.bottom" timestamp="1598960445607">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

@@ -29,4 +29,6 @@ public interface UserService {
     User lgoin(User user);
     // 选中删除
     public void delSelectUser(String id);
+    // 模糊查询
+    public List<User> likeFind(User user);
 }

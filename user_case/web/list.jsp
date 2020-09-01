@@ -94,7 +94,7 @@
 
     <div style="float: left;">
 
-        <form class="form-inline" action="" method="post">
+        <form class="form-inline" action="${pageContext.request.contextPath}/likeSelectServlet" method="post">
             <div class="form-group">
                 <label for="exampleInputName2">姓名</label>
                 <input type="text" name="name" value="" class="form-control" id="exampleInputName2" >

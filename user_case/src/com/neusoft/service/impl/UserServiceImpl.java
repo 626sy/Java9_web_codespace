@@ -53,4 +53,9 @@ public class UserServiceImpl implements UserService {
     public void delSelectUser(String id) {
         dao.delete(Integer.parseInt(id));
     }
+
+    @Override
+    public List<User> likeFind(User user) {
+        return dao.likeFind(user);
+    }
 }
