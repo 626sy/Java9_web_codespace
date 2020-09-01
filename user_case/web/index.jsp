@@ -25,8 +25,9 @@
 </head>
 <body>
 <div align="center">
+  <h1>${user.name},欢迎您登陆</h1>
   <a
-          href="/userListServlet" style="text-decoration:none;font-size:33px">查询所有用户信息
+          href="${pageContext.request.contextPath}/userListServlet" style="text-decoration:none;font-size:33px">查询所有用户信息
   </a>
 </div>
 </body>

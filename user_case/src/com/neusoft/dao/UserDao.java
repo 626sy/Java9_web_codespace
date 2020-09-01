@@ -21,4 +21,8 @@ public interface UserDao {
     public void delete(int id);
     // 根据id查询并获取id
     public User findById(int id);
+    // 登录
+    public User login(User user);
+
+    public User findUserByUsernameAndPassword(String username,String password);
 }

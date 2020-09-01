@@ -8,6 +8,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 
 import javax.jws.soap.SOAPBinding;
+import java.sql.ResultSet;
 import java.util.List;
 
 /**
@@ -57,6 +58,26 @@ public class UserDaoImpl implements UserDao {
         String sql = "select * from user where id = ?";
 
         return template.queryForObject(sql,new BeanPropertyRowMapper<User>(User.class),id);
+
+    }
+
+    @Override
+    public User login(User user) {
+        String sql = "select * from user where username = ? and password = ?";
+        return template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class),user.getUsername(),user.getPassword());
+
+    }
+
+    @Override
+    public User findUserByUsernameAndPassword(String username, String password) {
+        try {
+            String sql = "select * from user where username = ? and password = ?";
+            User user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username, password);
+            return user;
+        } catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
 
     }
 }

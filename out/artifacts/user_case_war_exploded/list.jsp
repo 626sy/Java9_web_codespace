@@ -38,6 +38,36 @@
             }
         }
 
+        window.onload = function () {
+            // 给删除按钮添加单击事件
+            document.getElementById("delSelected").onclick = function () {
+                // 用户安全事件
+                var flag = false;
+                if (confirm("您确定要删除吗")){
+                    var cbs = document.getElementsByName("uid");
+                    for (let i = 0; i < cbs.length; i++) {
+                        if (cbs[i].checked){
+                            // 有一个被选中了
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (flag){
+                        document.getElementById("form").submit();
+
+                    }
+                }
+            }
+
+            // 获取第一个checkbox
+            document.getElementById("firstCb").onclick = function () {
+                // 全选
+                var cbs = document.getElementsByName("uid");
+                for (let i = 0; i < cbs.length; i++) {
+                    cbs[i].checked = this.checked;
+                }
+            }
+        }
 
 
 
@@ -74,7 +104,7 @@
         <a class="btn btn-primary" href="javascript:void(0);" id="delSelected">删除选中</a>
 
     </div>
-    <form id="form" action="" method="post">
+    <form id="form" action="${pageContext.request.contextPath}/delSelectedServlet" method="post">
         <table border="1" class="table table-bordered table-hover">
             <tr class="success">
                 <th><input type="checkbox" id="firstCb"></th>
