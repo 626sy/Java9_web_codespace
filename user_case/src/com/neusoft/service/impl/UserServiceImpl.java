@@ -18,4 +18,9 @@ public class UserServiceImpl implements UserService {
         // 根据dao层查询
         return dao.findAll();
     }
+
+    @Override
+    public int insertAll(User user) {
+        return dao.insertAll(user);
+    }
 }

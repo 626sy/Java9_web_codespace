@@ -14,4 +14,7 @@ import java.util.List;
 public interface UserService {
     // 查询所有用户信息
     public List<User> findAll();
+
+    // 注册新用户
+    public int insertAll(User user);
 }

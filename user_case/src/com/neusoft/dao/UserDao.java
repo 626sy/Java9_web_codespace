@@ -10,7 +10,10 @@ import java.util.List;
  */
 public interface UserDao {
     // 用户操作dao
+    // 查询用户信息
     public List<User> findAll();
-
-
+    // 修改
+    public List<User> updateAll();
+    // 注册
+    public int insertAll(User user);
 }

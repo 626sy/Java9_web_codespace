@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 
+import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 /**
@@ -24,4 +25,20 @@ public class UserDaoImpl implements UserDao {
 //        return users;
         return template.query(sql, new BeanPropertyRowMapper<User>(User.class));
     }
+    // 修改
+    @Override
+    public List<User> updateAll() {
+        String sql = "update user set name = ? and gender =? and age = ? and address = ? and qq = ? and email = ?";
+        return null;
+    }
+    // 注册
+    @Override
+    public int insertAll(User user) {
+        String sql = "insert into user values(null ,?,?,?,?,?,?)";
+        int updateUser = template.update(sql, user.getName(), user.getGender(), user.getAge(),
+                user.getAddress(), user.getQq(), user.getEmail());
+        return updateUser;
+    }
+
+
 }
