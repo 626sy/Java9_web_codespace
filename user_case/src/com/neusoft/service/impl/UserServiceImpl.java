@@ -18,22 +18,22 @@ public class UserServiceImpl implements UserService {
         // 根据dao层查询
         return dao.findAll();
     }
-
+    // 注册新用户
     @Override
     public void insertAll(User user) {
         dao.insertAll(user);
     }
-
+    // 更新信息
     @Override
     public void update(User user) {
         dao.updateAll(user);
     }
-
+    // 删除信息
     @Override
     public void deleteUser(String id) {
         dao.delete(Integer.parseInt(id));
     }
-
+    // 根据id查询并返回id
     @Override
     public User findUserById(String id) {
         return dao.findById(Integer.parseInt(id));

@@ -13,12 +13,12 @@ public interface UserDao {
     // 查询用户信息
     public List<User> findAll();
 
-    // 注册
+    // 注册信息
     public void insertAll(User user);
-
+    // 更新信息
     public void updateAll(User user);
-
+    // 删除信息
     public void delete(int id);
-
+    // 根据id查询并获取id
     public User findById(int id);
 }

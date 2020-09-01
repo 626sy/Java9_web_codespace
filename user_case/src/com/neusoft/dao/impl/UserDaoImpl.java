@@ -35,7 +35,7 @@ public class UserDaoImpl implements UserDao {
         System.out.println(addUser);
 
     }
-
+    // 根据id修改更新信息
     @Override
     public void updateAll(User user) {
         // TODO
@@ -44,14 +44,14 @@ public class UserDaoImpl implements UserDao {
                 user.getAddress(), user.getQq(), user.getEmail(),user.getId());
 
     }
-
+    // 删除信息
     @Override
     public void delete(int id) {
         String sql ="delete from user where id = ?";
 
         template.update(sql,id);
     }
-
+    // 根据id查询并获取id
     @Override
     public User findById(int id) {
         String sql = "select * from user where id = ?";

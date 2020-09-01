@@ -17,10 +17,10 @@ public interface UserService {
 
     // 注册新用户
     public void insertAll(User user);
-
+    // 更新信息
     public void update(User user);
-
+    // 删除信息
     public void deleteUser(String  id);
-
-    User findUserById(String id);
+    // 根据id查询并返回id
+    public User findUserById(String id);
 }
