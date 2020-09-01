@@ -38,14 +38,19 @@ public class UserServiceImpl implements UserService {
     public User findUserById(String id) {
         return dao.findById(Integer.parseInt(id));
     }
-
+    // 登录1
     @Override
     public User login1(User user) {
         return dao.login(user);
     }
-
+    // 登录
     @Override
     public User lgoin(User user) {
         return dao.findUserByUsernameAndPassword(user.getUsername(),user.getPassword());
+    }
+
+    @Override
+    public void delSelectUser(String id) {
+        dao.delete(Integer.parseInt(id));
     }
 }

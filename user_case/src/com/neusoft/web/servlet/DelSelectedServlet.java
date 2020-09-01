@@ -1,5 +1,8 @@
 package com.neusoft.web.servlet;
 
+import com.neusoft.service.UserService;
+import com.neusoft.service.impl.UserServiceImpl;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,9 +24,15 @@ public class DelSelectedServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
         // 获取所有选中的 uid
         String[] uids = req.getParameterValues("uid");
 
+        UserService service = new UserServiceImpl();
+        for (String id:uids){
+            service.delSelectUser(id);
+        }
+        resp.sendRedirect(req.getContextPath()+"/userListServlet");
         System.out.println(Arrays.toString(uids));
 
     }

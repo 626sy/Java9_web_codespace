@@ -23,8 +23,10 @@ public interface UserService {
     public void deleteUser(String  id);
     // 根据id查询并返回id
     public User findUserById(String id);
-    // 登录
+    // 登录1
     public User login1(User user);
-
+    // 登录
     User lgoin(User user);
+    // 选中删除
+    public void delSelectUser(String id);
 }

@@ -54,7 +54,6 @@
                     }
                     if (flag){
                         document.getElementById("form").submit();
-
                     }
                 }
             }
@@ -66,6 +65,22 @@
                 for (let i = 0; i < cbs.length; i++) {
                     cbs[i].checked = this.checked;
                 }
+            }
+            
+            var uids = document.getElementsByName("uid");
+            var firstCb = document.getElementById("firstCb");
+            for (let i = 0; i < uids.length; i++) {
+                uids[i].onclick = function () {
+                    firstCb.checked = true;
+                    for (let j = 0; j < uids.length; j++) {
+                        if (!uids[j].checked){
+                            firstCb.checked = false;
+                            break;
+                        }
+                    }
+                }
+
+
             }
         }
 
