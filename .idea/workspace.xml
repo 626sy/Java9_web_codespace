@@ -7,10 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5036403e-366e-445d-9273-0c78d182565a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/TServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/web/update.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,8 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -378,7 +377,7 @@
       <workItem from="1598661189271" duration="28880000" />
       <workItem from="1598789040694" duration="3977000" />
       <workItem from="1598832395923" duration="32904000" />
-      <workItem from="1598920235279" duration="15306000" />
+      <workItem from="1598920235279" duration="15902000" />
     </task>
     <servers />
   </component>
@@ -405,10 +404,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1598918358642" />
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1598941625550">
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1598943364927">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1598941625550" />
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1598943364927" />
     <state x="360" y="78" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1598410796292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
