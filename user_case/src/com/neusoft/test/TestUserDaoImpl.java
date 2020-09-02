@@ -1,5 +1,6 @@
 package com.neusoft.test;
 
+import com.neusoft.dao.UserDao;
 import com.neusoft.dao.impl.UserDaoImpl;
 import com.neusoft.domain.User;
 import com.neusoft.service.impl.UserServiceImpl;
@@ -62,7 +63,7 @@ public class TestUserDaoImpl {
 
     }*/
 
-    @Test
+/*    @Test
     public void Test5()  {
 //        UserServiceImpl service = new UserServiceImpl();
         UserDaoImpl dao = new UserDaoImpl();
@@ -72,6 +73,12 @@ public class TestUserDaoImpl {
         for (User u:users){
             System.out.println(u);
         }
+
+    }*/
+    @Test
+    public void Test6()  {
+        UserDaoImpl dao = new UserDaoImpl();
+
 
     }
 

@@ -111,8 +111,8 @@ public class UserDaoImpl implements UserDao {
             // 获取value值
             String value = condition.get(key)[0];
             // 判断value是否有值
-            if (value != null && "".equals(value)){
-                sb.append("  and"+ key +"like ?  ");
+            if (value != null && !"".equals(value)){
+                sb.append("  and "+ key +" like ?  ");
                 params.add("%" + value+"%");
             }
         }
@@ -144,8 +144,8 @@ public class UserDaoImpl implements UserDao {
             // 获取value值
             String value = condition.get(key)[0];
             // 判断value是否有值
-            if (value != null && "".equals(value)){
-                sb.append("  and"+ key +"like ?  ");
+            if (value != null && !"".equals(value)){
+                sb.append("  and "+ key +" like ?  ");
                 params.add("%" + value+"%");
             }
         }
@@ -155,7 +155,7 @@ public class UserDaoImpl implements UserDao {
         params.add(start);
         params.add(rows);
         sql = sb.toString();
-        System.out.println("sqlfindByPage"+sql);
+        System.out.println("sqlfindByPage "+sql);
         System.out.println("params"+params);
 
         return template.query(sql, new BeanPropertyRowMapper<User>(User.class),params.toArray());
