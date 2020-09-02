@@ -39,6 +39,7 @@ public class FindUserByPageServlet extends HttpServlet {
             rows = "5";
         }
         // 获取条件查询参数
+        // name = li &&  address =""   email = "
         Map<String, String[]> condition = req.getParameterMap();
 
         // service 进行查询

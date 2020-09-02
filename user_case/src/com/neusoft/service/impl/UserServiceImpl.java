@@ -88,10 +88,10 @@ public class UserServiceImpl implements UserService {
         List<User> list = dao.findByPage(start, rows, condition);
         pb.setList(list);
         // 计算总页码
-        int totalPage = (totalCount % rows) == 0 ? totalCount / rows : totalCount / rows + 1;
+        int totalPage = (totalCount % rows) == 0 ? totalCount/rows : totalCount/rows + 1;
         pb.setTotalPage(totalPage);
 
 
-        return null;
+        return pb;
     }
 }

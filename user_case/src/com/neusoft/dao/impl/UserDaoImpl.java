@@ -100,24 +100,28 @@ public class UserDaoImpl implements UserDao {
         StringBuilder sb = new StringBuilder(sql);
         // 遍历map
         Set<String> keySet = condition.keySet();
-/*        for (String key :keySet) {
+        // {name : "李" , address :"广"   email = "111"}
+        List<Object> params = new ArrayList<>();
+        for (String key :keySet) {
             // 排除 分页的条件参数
             if ("currentPage".equals(key) || "rows".equals(key)){
                 continue;
             }
-
+//          select count(*) from user where 1=1 and name like '%李%'
             // 获取value值
             String value = condition.get(key)[0];
             // 判断value是否有值
             if (value != null && "".equals(value)){
-                sb.append("and"+ key +"like ?");
+                sb.append("  and"+ key +"like ?  ");
+                params.add("%" + value+"%");
             }
-        }*/
+        }
 
         System.out.println("sql findTotalCount" +sb.toString());
+        System.out.println(params);
 
-
-        return template.queryForObject(sb.toString(), Integer.class);
+//        return template.queryForObject(sb.toString(), Integer.class);
+        return template.queryForObject(sb.toString(), Integer.class,params.toArray());
     }
 
 
@@ -125,17 +129,33 @@ public class UserDaoImpl implements UserDao {
     public List<User> findByPage(int start, int rows, Map<String, String[]> condition) {
 
         String sql = "select * from user where 1=1";
+//        String sql = "select * from user limit ?,?";
         StringBuilder sb = new StringBuilder(sql);
         Set<String> keySet = condition.keySet();
 
         List<Object> params = new ArrayList<>();
 
+        for (String key :keySet) {
+            // 排除 分页的条件参数
+            if ("currentPage".equals(key) || "rows".equals(key)){
+                continue;
+            }
+//          select count(*) from user where 1=1 and name like '%李%'
+            // 获取value值
+            String value = condition.get(key)[0];
+            // 判断value是否有值
+            if (value != null && "".equals(value)){
+                sb.append("  and"+ key +"like ?  ");
+                params.add("%" + value+"%");
+            }
+        }
 
         // 添加分页
-        sb.append("limit ?,? ");
+        sb.append(" limit ?,? ");
         params.add(start);
         params.add(rows);
-        System.out.println("sqlfindByPage"+sb.toString());
+        sql = sb.toString();
+        System.out.println("sqlfindByPage"+sql);
         System.out.println("params"+params);
 
         return template.query(sql, new BeanPropertyRowMapper<User>(User.class),params.toArray());
