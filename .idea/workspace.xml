@@ -7,13 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5036403e-366e-445d-9273-0c78d182565a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/domain/PageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/FindUserByPageServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/dao/impl/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/test/TestUserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/test/TestUserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/DelSelectedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/src/com/neusoft/web/servlet/DelSelectedServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_case/web/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user_case/web/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +83,12 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\GitHub\Java9_web_codespace\user_case\web\WEB-INF" />
       <recent name="G:\GitHub\Java9_web_codespace\user_case\web" />
-      <recent name="G:\GitHub\Java9_web_codespace\day04_Cookies_Session\web\WEB-INF" />
-      <recent name="G:\GitHub\Java9_web_codespace\day03_request\src" />
-      <recent name="G:\GitHub\Java9_web_codespace\day02_servlet_class\src" />
+      <recent name="G:\GitHub\Java9_web_codespace\user_case\src" />
+      <recent name="G:\GitHub\Java9_web_codespace\user_case\web\WEB-INF\lib" />
+      <recent name="G:\GitHub\Java9_web_codespace\day05__el_jstl\web\jstl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.neusoft.web.servlet" />
@@ -94,12 +97,11 @@
       <recent name="com.neusoft.session" />
       <recent name="com.neusoft.cookie" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\GitHub\Java9_web_codespace\user_case\web\WEB-INF" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\GitHub\Java9_web_codespace\user_case\web" />
-      <recent name="G:\GitHub\Java9_web_codespace\user_case\src" />
-      <recent name="G:\GitHub\Java9_web_codespace\user_case\web\WEB-INF\lib" />
-      <recent name="G:\GitHub\Java9_web_codespace\day05__el_jstl\web\jstl" />
+      <recent name="G:\GitHub\Java9_web_codespace\day04_Cookies_Session\web\WEB-INF" />
+      <recent name="G:\GitHub\Java9_web_codespace\day03_request\src" />
+      <recent name="G:\GitHub\Java9_web_codespace\day02_servlet_class\src" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.31">
@@ -347,11 +349,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -382,7 +379,7 @@
       <workItem from="1598789040694" duration="3977000" />
       <workItem from="1598832395923" duration="32904000" />
       <workItem from="1598920235279" duration="37415000" />
-      <workItem from="1599004475240" duration="2766000" />
+      <workItem from="1599004475240" duration="8756000" />
     </task>
     <servers />
   </component>
@@ -412,10 +409,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1598944711428" />
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1599007778241">
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1599008988941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1599007778241" />
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1599008988941" />
     <state x="360" y="78" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1598410796292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

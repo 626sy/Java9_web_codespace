@@ -9,7 +9,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.jws.soap.SOAPBinding;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author shihaobo
@@ -89,5 +92,52 @@ public class UserDaoImpl implements UserDao {
         List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class), user.getName(), user.getAddress(), user.getEmail());
         return users;
 
+    }
+
+    @Override
+    public int findTotalCount(Map<String, String[]> condition) {
+        String sql = "select count(*) from user where 1=1";
+        StringBuilder sb = new StringBuilder(sql);
+        // 遍历map
+        Set<String> keySet = condition.keySet();
+/*        for (String key :keySet) {
+            // 排除 分页的条件参数
+            if ("currentPage".equals(key) || "rows".equals(key)){
+                continue;
+            }
+
+            // 获取value值
+            String value = condition.get(key)[0];
+            // 判断value是否有值
+            if (value != null && "".equals(value)){
+                sb.append("and"+ key +"like ?");
+            }
+        }*/
+
+        System.out.println("sql findTotalCount" +sb.toString());
+
+
+        return template.queryForObject(sb.toString(), Integer.class);
+    }
+
+
+    @Override
+    public List<User> findByPage(int start, int rows, Map<String, String[]> condition) {
+
+        String sql = "select * from user where 1=1";
+        StringBuilder sb = new StringBuilder(sql);
+        Set<String> keySet = condition.keySet();
+
+        List<Object> params = new ArrayList<>();
+
+
+        // 添加分页
+        sb.append("limit ?,? ");
+        params.add(start);
+        params.add(rows);
+        System.out.println("sqlfindByPage"+sb.toString());
+        System.out.println("params"+params);
+
+        return template.query(sql, new BeanPropertyRowMapper<User>(User.class),params.toArray());
     }
 }
