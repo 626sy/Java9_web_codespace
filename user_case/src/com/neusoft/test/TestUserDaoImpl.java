@@ -64,11 +64,14 @@ public class TestUserDaoImpl {
 
     @Test
     public void Test5()  {
-        UserServiceImpl service = new UserServiceImpl();
+//        UserServiceImpl service = new UserServiceImpl();
         UserDaoImpl dao = new UserDaoImpl();
-        User user = new User();
-
-        service.likeFind(user);
+        User user = new User("张",null);
+//        user.setName("张");
+        List<User> users = dao.likeFind(user);
+        for (User u:users){
+            System.out.println(u);
+        }
 
     }
 

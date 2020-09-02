@@ -83,7 +83,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public List<User> likeFind(User user) {
-        String sql = "select * from user where name like '%?%'; ";
+        String sql = "select * from user where"+" name like ? and address like ? and email like ?";
 //        and address like '%?%' and email like '%?%'
 
         List<User> users = template.query(sql, new BeanPropertyRowMapper<User>(User.class), user.getName(), user.getAddress(), user.getEmail());

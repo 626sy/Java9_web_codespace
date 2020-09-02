@@ -29,9 +29,11 @@ public class DelSelectedServlet extends HttpServlet {
         String[] uids = req.getParameterValues("uid");
 
         UserService service = new UserServiceImpl();
-        for (String id:uids){
-            service.delSelectUser(id);
-        }
+
+//        for (String id:uids){
+//            service.deleteUser(id);
+//        }
+        service.delSelectUser(uids);
         resp.sendRedirect(req.getContextPath()+"/userListServlet");
         System.out.println(Arrays.toString(uids));
 

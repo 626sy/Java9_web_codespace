@@ -27,8 +27,9 @@ public interface UserService {
     public User login1(User user);
     // 登录
     User lgoin(User user);
+
     // 选中删除
-    public void delSelectUser(String id);
+    public void delSelectUser(String[] ids);
     // 模糊查询
     public List<User> likeFind(User user);
 }
