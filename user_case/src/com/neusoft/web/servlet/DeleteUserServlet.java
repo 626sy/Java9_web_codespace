@@ -38,7 +38,8 @@ public class DeleteUserServlet extends HttpServlet {
         UserService service = new UserServiceImpl();
         service.deleteUser(id);
         // 5、重定向到list.jsp
-        resp.sendRedirect(req.getContextPath()+"/userListServlet");
+//        resp.sendRedirect(req.getContextPath()+"/userListServlet");
 
+        resp.sendRedirect(req.getContextPath()+"/findUserByPageServlet");
     }
 }

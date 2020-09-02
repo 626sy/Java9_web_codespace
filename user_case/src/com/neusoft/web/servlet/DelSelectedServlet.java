@@ -34,7 +34,8 @@ public class DelSelectedServlet extends HttpServlet {
 //            service.deleteUser(id);
 //        }
         service.delSelectUser(uids);
-        resp.sendRedirect(req.getContextPath()+"/userListServlet");
+//        resp.sendRedirect(req.getContextPath()+"/userListServlet");
+        resp.sendRedirect(req.getContextPath()+"/findUserByPageServlet");
         System.out.println(Arrays.toString(uids));
 
     }

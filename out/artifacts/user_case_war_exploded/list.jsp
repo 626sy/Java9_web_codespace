@@ -34,7 +34,7 @@
             //用户安全提示
             if(confirm("您确定要删除吗？")){
                 //访问路径
-                location.href="${pageContext.request.contextPath}/delUserServlet?id="+id;
+                location.href="${pageContext.request.contextPath}/deleteUserServlet?id="+id;
             }
         }
         window.onload = function () {

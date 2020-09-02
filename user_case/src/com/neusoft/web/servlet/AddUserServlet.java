@@ -58,9 +58,9 @@ public class AddUserServlet extends HttpServlet {
         UserServiceImpl service = new UserServiceImpl();
         service.insertAll(user);
         // 5、重定向到list.jsp
-        resp.sendRedirect(req.getContextPath()+"/userListServlet");
+//        resp.sendRedirect(req.getContextPath()+"/userListServlet");
 //            req.getRequestDispatcher("/userListServlet").forward(req,resp);
-
+        resp.sendRedirect(req.getContextPath()+"/findUserByPageServlet");
 
     }
 }

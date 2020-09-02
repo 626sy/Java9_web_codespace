@@ -42,7 +42,8 @@ public class UserUpdateServlet extends HttpServlet {
         UserServiceImpl service = new UserServiceImpl();
         service.update(user);
         // 重定向
-        resp.sendRedirect(req.getContextPath()+"/userListServlet");
+//        resp.sendRedirect(req.getContextPath()+"/userListServlet");
+        resp.sendRedirect(req.getContextPath()+"/findUserByPageServlet");
 //        req.getRequestDispatcher("/userListServlet").forward(req,resp);
     }
 }
